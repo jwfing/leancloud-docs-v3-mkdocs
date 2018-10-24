@@ -1,0 +1,143 @@
+site_name: LeanCloud 文档
+# Copyright
+copyright: 'Copyright &copy; 2014 - 2018 LeanCloud'
+theme:
+  name: material
+  custom_dir: theme/
+  feature:
+    tabs: true
+extra_css:
+  # - assets/stylesheets/material-components-web.min.css
+  - assets/stylesheets/mdc-web.css
+nav:
+    - 文档首页: 'index.md'
+    # - SDK 安装:
+    #   - 'iOS(Objecrtive-C & Swift)': 'sdk-setup/ios.md'
+    #   - 'JavaScript(& NodeJS)': 'sdk-setup/js.md'
+    #   - 'Android': 'sdk-setup/android.md'
+    #   - 'Java': 'sdk-setup/java.md'
+    #   - '.NET(& Unity)': 'sdk-setup/dotnet.md'
+    #   - 'Python': 'sdk-setup/python.md'
+    #   - 'PHP': 'sdk-setup/php.md'
+    - 数据存储: 
+      - '服务总览': 'storage/storage-overview.md'
+      - '对象存储与查询': 'storage/object.md'
+      - '用户管理': 'storage/user.md'
+      - '实时数据同步 LiveQuery': 'storage/live-query.md'
+      - '数据安全详解': 'storage/acl.md'
+    - 云引擎+云缓存:
+      - 服务总览: 'engine/engine-overview.md'
+      - 快速入门: 'engine/start.md'
+      - 网站托管:
+        - 'NodeJS': 'engine/nodejs.md'
+        - 'Python': 'engine/python.md'
+        - 'PHP': 'engine/php.md'
+        - 'C#': 'engine/dotnet.md'
+      - 云函数:
+        - '数据存储 Hook': 'engine/storage-hook.md'
+        - '即时通讯 Hook': 'engine/im-hook.md'
+      - '云缓存 LeanCache 使用指南': 'engine/leancache.md'
+      - '云引擎常见问题': 'engine/faq.md'
+      - '命令行工具 CLI 使用指南': 'lean-cli.md'
+    - 即时通讯: 
+      - '服务总览': 'im/im-overview.md'
+      - 客户端开发指南:
+        - '基础入门': 'im/im-beginner.md'
+        - '进阶功能': 'im/im-intermediate.md'
+        - '高阶技巧': 'im/im-senior.md'
+      - 服务端开发指南:
+        - Hook:
+          - 'NodeJS': 'engine/hook-nodejs.md'
+          - 'Python': 'engine/hook-python.md'
+          - 'PHP': 'engine/hook-php.md'
+          - 'C#': 'engine/hook-dotnet.md'
+        - 管理开发指南:
+          - 'Python': 'engine/server-python.md'
+    - 消息推送:
+      - '服务总览': 'push/push-overview.md'
+      - 开发指南:
+        - iOS:
+          - 'APNS 证书配置': 'push/apns-cert.md'
+        - Android:
+          - 'Android 混合推送': 'push/android-mixpush.md'
+    - 短信:
+      - '服务总览': 'sms/sms-overview.md'
+      - 开发指南:
+        - '营销短信': 'sms/marketing.md'
+        - '通知短信': 'sms/notice.md'
+        - '用户验证类短信': 'sms/user.md'
+    # - 行业解决方案:
+    - 游戏+云端:
+      - 多人实时对战: 
+        - '服务总览': 'game/play/play-overview.md'
+        - '开发指南': 'game/play/multiplayer.md'
+      - 排行榜: 
+        - '服务总览': 'game/leaderboard/leaderboard-overview.md'
+        - '开发指南': 'game/leaderboard/leaderboard.md'
+    - 微信小程序:
+      - '在微信小程序与小游戏中使用 LeanCloud': 'solution/weapp.md'
+    # - REST API:
+    #   - '数据存储 REST API': 'rest/storage.md'
+    #   - '即时通讯 REST API': 'rest/storage.md'    
+    #   - '云引擎 REST API': 'rest/storage.md'
+    #   - '消息推送 REST API': 'rest/storage.md'            
+    #   - '短信 SMS REST API': 'rest/storage.md'      
+        
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - smarty:
+      smart_quotes: false
+  - attr_list
+  - def_list
+  - tables
+  - abbr
+  - footnotes
+  - codehilite:
+       guess_lang: true
+  - pymdownx.extrarawhtml:
+  - pymdownx.betterem:
+  - pymdownx.superfences:
+      preserve_tabs: true
+      custom_fences: 
+        - name: flow
+          class: uml-flowchart
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: sequence
+          class: uml-sequence-diagram
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: math
+          class: arithmatex
+          format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
+  - pymdownx.inlinehilite:
+      custom_inline:
+        - name: math
+          class: arithmatex
+          format: !!python/name:pymdownx.arithmatex.inline_mathjax_format
+  - pymdownx.magiclink:
+      repo_url_shortener: true
+      repo_url_shorthand: true
+      social_url_shorthand: true
+      user: facelessuser
+      repo: pymdown-extensions
+  - pymdownx.tilde:
+  - pymdownx.caret:
+  - pymdownx.critic:
+  - pymdownx.smartsymbols:
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.escapeall:
+      hardbreak: True
+      nbsp: True
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.progressbar:
+  - pymdownx.arithmatex:
+  - pymdownx.mark:
+  - pymdownx.striphtml:
+  - pymdownx.snippets:
+      base_path: docs/src/markdown/_snippets
+  - pymdownx.keys:
+      separator: "\uff0b"
+  - pymdownx.details:
