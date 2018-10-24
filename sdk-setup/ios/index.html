@@ -1,0 +1,1502 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Objective-C SDK 安装指南 - LeanCloud 文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/mdc-web.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../#objective-c-sdk" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="LeanCloud 文档" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                LeanCloud 文档
+              </span>
+              <span class="md-header-nav__topic">
+                Objective-C SDK 安装指南
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="文档首页" class="md-tabs__link md-tabs__link--active">
+        文档首页
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../storage/storage-overview/" title="数据存储" class="md-tabs__link">
+          数据存储
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../engine/engine-overview/" title="云引擎+云缓存" class="md-tabs__link">
+          云引擎+云缓存
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../im/im-overview/" title="即时通讯" class="md-tabs__link">
+          即时通讯
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../push/push-overview/" title="消息推送" class="md-tabs__link">
+          消息推送
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../sms/sms-overview/" title="短信" class="md-tabs__link">
+          短信
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../game/play/play-overview/" title="游戏+云端" class="md-tabs__link">
+          游戏+云端
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../solution/weapp/" title="微信小程序" class="md-tabs__link">
+          微信小程序
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="LeanCloud 文档" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    LeanCloud 文档
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="文档首页" class="md-nav__link">
+      文档首页
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      数据存储
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        数据存储
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../storage/storage-overview/" title="服务总览" class="md-nav__link">
+      服务总览
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../storage/object.md" title="对象存储与查询" class="md-nav__link">
+      对象存储与查询
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../storage/user.md" title="用户管理" class="md-nav__link">
+      用户管理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../storage/live-query.md" title="实时数据同步 LiveQuery" class="md-nav__link">
+      实时数据同步 LiveQuery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../storage/acl/" title="数据安全详解" class="md-nav__link">
+      数据安全详解
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      云引擎+云缓存
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        云引擎+云缓存
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../engine/engine-overview/" title="服务总览" class="md-nav__link">
+      服务总览
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../engine/start.md" title="快速入门" class="md-nav__link">
+      快速入门
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      网站托管
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        网站托管
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../engine/nodejs.md" title="NodeJS" class="md-nav__link">
+      NodeJS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../engine/python.md" title="Python" class="md-nav__link">
+      Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../engine/php.md" title="PHP" class="md-nav__link">
+      PHP
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../engine/dotnet.md" title="C#" class="md-nav__link">
+      C#
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
+      云函数
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        云函数
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../engine/storage-hook.md" title="数据存储 Hook" class="md-nav__link">
+      数据存储 Hook
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../engine/im-hook.md" title="即时通讯 Hook" class="md-nav__link">
+      即时通讯 Hook
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../engine/leancache.md" title="云缓存 LeanCache 使用指南" class="md-nav__link">
+      云缓存 LeanCache 使用指南
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../engine/faq.md" title="云引擎常见问题" class="md-nav__link">
+      云引擎常见问题
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lean-cli.md" title="命令行工具 CLI 使用指南" class="md-nav__link">
+      命令行工具 CLI 使用指南
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      即时通讯
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        即时通讯
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../im/im-overview/" title="服务总览" class="md-nav__link">
+      服务总览
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      客户端开发指南
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        客户端开发指南
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../im/im-beginner/" title="基础入门" class="md-nav__link">
+      基础入门
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../im/im-intermediate.md" title="进阶功能" class="md-nav__link">
+      进阶功能
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../im/im-senior.md" title="高阶技巧" class="md-nav__link">
+      高阶技巧
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      服务端开发指南
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        服务端开发指南
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3-1" type="checkbox" id="nav-4-3-1">
+    
+    <label class="md-nav__link" for="nav-4-3-1">
+      Hook
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-3-1">
+        Hook
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../engine/hook-nodejs.md" title="NodeJS" class="md-nav__link">
+      NodeJS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../engine/hook-python.md" title="Python" class="md-nav__link">
+      Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../engine/hook-php.md" title="PHP" class="md-nav__link">
+      PHP
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../engine/hook-dotnet.md" title="C#" class="md-nav__link">
+      C#
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3-2" type="checkbox" id="nav-4-3-2">
+    
+    <label class="md-nav__link" for="nav-4-3-2">
+      管理开发指南
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-3-2">
+        管理开发指南
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../engine/server-python.md" title="Python" class="md-nav__link">
+      Python
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      消息推送
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        消息推送
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../push/push-overview/" title="服务总览" class="md-nav__link">
+      服务总览
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      开发指南
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        开发指南
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-1" type="checkbox" id="nav-5-2-1">
+    
+    <label class="md-nav__link" for="nav-5-2-1">
+      iOS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-1">
+        iOS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../push/apns-cert/" title="APNS 证书配置" class="md-nav__link">
+      APNS 证书配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-2" type="checkbox" id="nav-5-2-2">
+    
+    <label class="md-nav__link" for="nav-5-2-2">
+      Android
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-2">
+        Android
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../push/android-mixpush/" title="Android 混合推送" class="md-nav__link">
+      Android 混合推送
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      短信
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        短信
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sms/sms-overview/" title="服务总览" class="md-nav__link">
+      服务总览
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2" type="checkbox" id="nav-6-2">
+    
+    <label class="md-nav__link" for="nav-6-2">
+      开发指南
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-2">
+        开发指南
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sms/marketing/" title="营销短信" class="md-nav__link">
+      营销短信
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sms/notice/" title="通知短信" class="md-nav__link">
+      通知短信
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sms/user/" title="用户验证类短信" class="md-nav__link">
+      用户验证类短信
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      游戏+云端
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        游戏+云端
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1">
+    
+    <label class="md-nav__link" for="nav-7-1">
+      多人实时对战
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-1">
+        多人实时对战
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../game/play/play-overview/" title="服务总览" class="md-nav__link">
+      服务总览
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../game/play/multiplayer/" title="开发指南" class="md-nav__link">
+      开发指南
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+    
+    <label class="md-nav__link" for="nav-7-2">
+      排行榜
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-2">
+        排行榜
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../game/leaderboard/leaderboard-overview.md" title="服务总览" class="md-nav__link">
+      服务总览
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../game/leaderboard/leaderboard.md" title="开发指南" class="md-nav__link">
+      开发指南
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      微信小程序
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        微信小程序
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../solution/weapp/" title="在微信小程序与小游戏中使用 LeanCloud" class="md-nav__link">
+      在微信小程序与小游戏中使用 LeanCloud
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="自动安装" class="md-nav__link">
+    自动安装
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="手动安装" class="md-nav__link">
+    手动安装
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="下载源码" class="md-nav__link">
+    下载源码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sdk" title="集成 SDK" class="md-nav__link">
+    集成 SDK
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xcodeproj" title="集成 xcodeproj" class="md-nav__link">
+    集成 xcodeproj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#framework" title="编译 framework" class="md-nav__link">
+    编译 framework
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="添加系统依赖" class="md-nav__link">
+    添加系统依赖
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sdk_1" title="初始化 SDK" class="md-nav__link">
+    初始化 SDK
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="开启调试日志" class="md-nav__link">
+    开启调试日志
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="查看服务器返回的错误" class="md-nav__link">
+    查看服务器返回的错误
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" title="社交组件" class="md-nav__link">
+    社交组件
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="objective-c-sdk">Objective-C SDK 安装指南<a class="headerlink" href="#objective-c-sdk" title="Permanent link">&para;</a></h1>
+<h2 id="_1">自动安装<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>通过 <a href="http://www.cocoapods.org">CocoaPods</a> 安装可以最大化地简化安装过程。</p>
+<p>首先，在项目根目录下的 <code class="codehilite">Podfile</code> 文件中添加以下 pods：</p>
+<div class="codehilite"><pre><span></span><span class="n">pod</span> <span class="s1">&#39;AVOSCloud&#39;</span>               <span class="c1"># 数据存储、短信、云引擎调用等基础服务模块</span>
+<span class="n">pod</span> <span class="s1">&#39;AVOSCloudIM&#39;</span>             <span class="c1"># 即时通讯模块</span>
+</pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>从 v3.4.0 开始，不再根据平台区分 pod 名称。同一个模块在所有平台上的 pod 名称相同。CocoaPods 会根据 Podfile 中的 platform 信息安装相应的源文件。带有平台后缀的旧的 pod，例如 AVOSCloud-watchOS、AVOSCloudIM-OSX 等不再更新。如果要更新到 v3.4.0 及以后的版本，请将 pod 的平台后缀去掉。</p>
+</div>
+<p>然后在项目根目录执行 <code class="codehilite">pod install</code> 命令，执行成功后，SDK 就集成到项目中了。</p>
+<h2 id="_2">手动安装<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">下载源码<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>首先将 SDK 仓库 clone 到项目根目录：</p>
+<div class="codehilite"><pre><span></span>git clone <span class="s2">&quot;https://github.com/leancloud/objc-sdk.git&quot;</span> leancloud-objc-sdk
+</pre></div>
+
+<p>然后 checkout 版本。SDK 的版本号是通过 tag 标记的，可以使用以下命令 checkout 最新版本：</p>
+<div class="codehilite"><pre><span></span><span class="nb">cd</span> leancloud-objc-sdk
+
+git checkout <span class="k">$(</span>git describe --tags <span class="k">$(</span>git rev-list --tags --max-count<span class="o">=</span><span class="m">1</span><span class="k">))</span>
+</pre></div>
+
+<h3 id="sdk">集成 SDK<a class="headerlink" href="#sdk" title="Permanent link">&para;</a></h3>
+<p>将 SDK 集成到到项目中有以下两种方式，<strong>任选一种即可</strong>：</p>
+<ul>
+<li>将 SDK 的 <code class="codehilite">xcodeproj</code> 文件直接添加到项目中。</li>
+<li>将 SDK 编译成 framework 再添加到项目中。</li>
+</ul>
+<h4 id="xcodeproj">集成 xcodeproj<a class="headerlink" href="#xcodeproj" title="Permanent link">&para;</a></h4>
+<p>将 <code class="codehilite">AVOS/AVOS.xcodeproj</code> 项目文件拖入项目，作为 subproject：</p>
+<p><img alt="img" src="images/quick_start/ios/subproject.png" /></p>
+<p>接着为该项目设置 Build Phases，添加 <strong>Link Binary With Libraries</strong>：</p>
+<p><img alt="img" src="images/quick_start/ios/link-binary.png" /></p>
+<p>上图选择了支持 iOS 平台的 AVOSCloud 与 AVOSCloudIM 两个 frameworks 用来举例。请根据实际需要来选择支持的平台以及要使用的模块。</p>
+<h4 id="framework">编译 framework<a class="headerlink" href="#framework" title="Permanent link">&para;</a></h4>
+<p>我们提供了一键编译脚本将 SDK 编译成 framework，在 SDK 所在的根目录执行：</p>
+<div class="codehilite"><pre><span></span>ruby build-framework.rb
+</pre></div>
+
+<p>待命令执行完毕，在 <code class="codehilite">AVOS/AVOS.xcodeproj/build</code> 目录下找到编译好的 framework 文件。</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>为了区分平台，frameworks 添加了平台后缀，例如 <code class="codehilite">AVOSCloud-iOS.framework</code>。请<u>先删掉平台后缀</u>再将其加入项目，否则会产生编译错误。</p></p>
+</div>
+<h3 id="_4">添加系统依赖<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>然后添加 SDK 依赖的系统 framework 和 library：</p>
+<ul>
+<li>libz</li>
+<li>libc++</li>
+<li>libicucore</li>
+<li>libsqlite3</li>
+<li>SystemConfiguration.framework</li>
+<li>MobileCoreServices.framework</li>
+<li>CoreTelephony.framework</li>
+<li>CoreLocation.framework</li>
+</ul>
+<p>就像下面这样：</p>
+<p><img alt="img" src="images/quick_start/ios/system-dependency.png" /></p>
+<p>最后在 <strong>Other Linker Flags</strong> 中添加 <code class="codehilite">-ObjC</code>。</p>
+<p>这样就集成完毕了。</p>
+<h2 id="sdk_1">初始化 SDK<a class="headerlink" href="#sdk_1" title="Permanent link">&para;</a></h2>
+<p>打开 AppDelegate 文件，导入基础模块：</p>
+<div class="codehilite"><pre><span></span><span class="cp">#import &lt;AVOSCloud/AVOSCloud.h&gt;</span>
+</pre></div>
+
+<p>然后粘贴下列代码到 <code class="codehilite"><span class="n">application</span><span class="o">:</span><span class="n">didFinishLaunchingWithOptions</span><span class="o">:</span></code> 方法中：</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="n">AVOSCloud</span> <span class="nl">setApplicationId</span><span class="p">:</span><span class="s">@&quot;{{appid}}&quot;</span> <span class="nl">clientKey</span><span class="p">:</span><span class="s">@&quot;{{appkey}}&quot;</span><span class="p">];</span>
+</pre></div>
+
+<p>使用 <strong>美国节点</strong> 需要增加以下代码：</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="n">AVOSCloud</span> <span class="nl">setServiceRegion</span><span class="p">:</span><span class="n">AVServiceRegionUS</span><span class="p">];</span>
+</pre></div>
+
+<p>如果想跟踪统计应用的打开情况，后面还可以添加下列代码：</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="n">AVAnalytics</span> <span class="nl">trackAppOpenedWithLaunchOptions</span><span class="p">:</span><span class="n">launchOptions</span><span class="p">];</span>
+</pre></div>
+
+<p>创建应用后，可以在 <a href="/app.html?appid={{appid}}#/key">控制台 &gt; 应用设置 &gt; 应用 Key</a> 中找到应用对应的 id 和 key。</p>
+<p>确保项目源文件中包含了 SDK 库文件：</p>
+<div class="codehilite"><pre><span></span><span class="cp">#import &lt;AVOSCloud/AVOSCloud.h&gt;</span>
+</pre></div>
+
+<p>下面来试着向 LeanCloud 云端保存一条数据，将下面的代码拷贝到 <code class="codehilite">viewDidLoad</code> 方法或其他在应用运行时会被调用的方法中：</p>
+<div class="codehilite"><pre><span></span><span class="n">AVObject</span> <span class="o">*</span><span class="n">testObject</span> <span class="o">=</span> <span class="p">[</span><span class="n">AVObject</span> <span class="nl">objectWithClassName</span><span class="p">:</span><span class="s">@&quot;TestObject&quot;</span><span class="p">];</span>
+<span class="p">[</span><span class="n">testObject</span> <span class="nl">setObject</span><span class="p">:</span><span class="s">@&quot;bar&quot;</span> <span class="nl">forKey</span><span class="p">:</span><span class="s">@&quot;foo&quot;</span><span class="p">];</span>
+<span class="p">[</span><span class="n">testObject</span> <span class="n">save</span><span class="p">];</span>
+</pre></div>
+
+<p>运行 App，一个类名为 <code class="codehilite">TestObject</code> 的新对象会被发送到 LeanCloud 并保存下来。当做完这一切，访问 <a href="/data.html?appid={{appid}}#/TestObject">控制台 &gt; 存储 &gt; 数据</a> 可以看到上面创建的 TestObject 的相关数据。</p>
+<h3 id="_5">开启调试日志<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>在应用开发阶段，你可以选择开启 SDK 的调试日志（debug log）来方便追踪问题。调试日志开启后，SDK 会把网络请求、错误消息等信息输出到 IDE 的日志窗口，或是浏览器 Console 或是 LeanCloud 控制台的 <a href="/dashboard/cloud.html?appid=#/log">云引擎日志</a> 中。</p>
+<div class="codehilite"><pre><span></span><span class="c1">// 放在 SDK 初始化语句 [AVOSCloud setApplicationId:] 后面，只需要调用一次即可</span>
+<span class="p">[</span><span class="n">AVOSCloud</span> <span class="nl">setAllLogsEnabled</span><span class="p">:</span><span class="nb">YES</span><span class="p">];</span>
+</pre></div>
+
+<p><div class="callout callout-danger">
+  <p>在应用发布之前，请关闭调试日志，以免暴露敏感数据。</p>
+</div></p>
+<h2 id="_6">查看服务器返回的错误<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>某个请求出错，SDK 会返回对应的错误信息。错误信息格式如下：</p>
+<ul>
+<li><strong>error.code</strong>：错误码，详见 <a href="error_code.html">文档</a>。</li>
+<li><strong>error.domain</strong>：错误域名，只有当 <code class="codehilite">error.domain</code> = <code class="codehilite">kLeanCloudErrorDomain</code> 时，才是 LeanCloud 返回的错误。</li>
+<li><strong>error.localizedFailureReason</strong>：错误信息详情</li>
+<li><strong>error.userInfo</strong>：其他信息，如历史版本的兼容信息等。</li>
+</ul>
+<p>例如 User 表中已经存在一个叫 Tom 的用户，再次注册用户名为 Tom 会报错「用户已经存在」，示例代码如下：</p>
+<div class="codehilite"><pre><span></span><span class="n">AVUser</span> <span class="o">*</span><span class="n">user</span> <span class="o">=</span> <span class="p">[</span><span class="n">AVUser</span> <span class="n">user</span><span class="p">];</span>
+<span class="n">user</span><span class="p">.</span><span class="n">username</span> <span class="o">=</span> <span class="s">@&quot;Tom&quot;</span><span class="p">;</span>
+<span class="n">user</span><span class="p">.</span><span class="n">password</span> <span class="o">=</span>  <span class="s">@&quot;cat!@#123&quot;</span><span class="p">;</span>
+<span class="p">[</span><span class="n">user</span> <span class="nl">signUpInBackgroundWithBlock</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">BOOL</span> <span class="n">succeeded</span><span class="p">,</span> <span class="bp">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+
+   <span class="c1">// 获取 RESTAPI 返回的错误信息详情（SDK 11.0.0 及以上的版本适用）</span>
+    <span class="k">if</span> <span class="p">([</span><span class="n">error</span><span class="p">.</span><span class="n">domain</span> <span class="nl">isEqualToString</span><span class="p">:</span><span class="n">kLeanCloudErrorDomain</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">error</span><span class="p">.</span><span class="n">code</span> <span class="o">==</span> <span class="mi">202</span><span class="p">)</span> <span class="p">{</span>
+    
+    	<span class="bp">NSString</span> <span class="o">*</span><span class="n">errorMessage</span> <span class="o">=</span> <span class="n">error</span><span class="p">.</span><span class="n">localizedFailureReason</span><span class="p">;</span>
+    	<span class="k">if</span> <span class="p">(</span><span class="n">errorMessage</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// handle error message</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="p">}];</span>
+</pre></div>
+
+<h2 id="_7">社交组件<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>如果需要使用社交组件功能，可以使用我们的开源组件：<a href="https://github.com/leancloud/leancloud-social-ios">leancloud-social-ios</a>。</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2014 - 2018 LeanCloud
+          </div>
+        
+        powered by
+        <a href="https://leancloud.cn">LeanCloud</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

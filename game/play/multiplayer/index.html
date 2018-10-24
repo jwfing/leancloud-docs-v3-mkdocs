@@ -1,0 +1,2782 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>开发指南 - LeanCloud 文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/mdc-web.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../../#play-unity" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="LeanCloud 文档" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                LeanCloud 文档
+              </span>
+              <span class="md-header-nav__topic">
+                开发指南
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="文档首页" class="md-tabs__link">
+        文档首页
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../storage/storage-overview/" title="数据存储" class="md-tabs__link">
+          数据存储
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../engine/engine-overview/" title="云引擎+云缓存" class="md-tabs__link">
+          云引擎+云缓存
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../im/im-overview/" title="即时通讯" class="md-tabs__link">
+          即时通讯
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../push/push-overview/" title="消息推送" class="md-tabs__link">
+          消息推送
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../sms/sms-overview/" title="短信" class="md-tabs__link">
+          短信
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../play-overview/" title="游戏+云端" class="md-tabs__link md-tabs__link--active">
+          游戏+云端
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../solution/weapp/" title="微信小程序" class="md-tabs__link">
+          微信小程序
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="LeanCloud 文档" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    LeanCloud 文档
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="文档首页" class="md-nav__link">
+      文档首页
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      数据存储
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        数据存储
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../storage/storage-overview/" title="服务总览" class="md-nav__link">
+      服务总览
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../storage/object.md" title="对象存储与查询" class="md-nav__link">
+      对象存储与查询
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../storage/user.md" title="用户管理" class="md-nav__link">
+      用户管理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../storage/live-query.md" title="实时数据同步 LiveQuery" class="md-nav__link">
+      实时数据同步 LiveQuery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../storage/acl/" title="数据安全详解" class="md-nav__link">
+      数据安全详解
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      云引擎+云缓存
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        云引擎+云缓存
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../engine/engine-overview/" title="服务总览" class="md-nav__link">
+      服务总览
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../engine/start.md" title="快速入门" class="md-nav__link">
+      快速入门
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      网站托管
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        网站托管
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../engine/nodejs.md" title="NodeJS" class="md-nav__link">
+      NodeJS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../engine/python.md" title="Python" class="md-nav__link">
+      Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../engine/php.md" title="PHP" class="md-nav__link">
+      PHP
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../engine/dotnet.md" title="C#" class="md-nav__link">
+      C#
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
+      云函数
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        云函数
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../engine/storage-hook.md" title="数据存储 Hook" class="md-nav__link">
+      数据存储 Hook
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../engine/im-hook.md" title="即时通讯 Hook" class="md-nav__link">
+      即时通讯 Hook
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../engine/leancache.md" title="云缓存 LeanCache 使用指南" class="md-nav__link">
+      云缓存 LeanCache 使用指南
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../engine/faq.md" title="云引擎常见问题" class="md-nav__link">
+      云引擎常见问题
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lean-cli.md" title="命令行工具 CLI 使用指南" class="md-nav__link">
+      命令行工具 CLI 使用指南
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      即时通讯
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        即时通讯
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../im/im-overview/" title="服务总览" class="md-nav__link">
+      服务总览
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      客户端开发指南
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        客户端开发指南
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../im/im-beginner/" title="基础入门" class="md-nav__link">
+      基础入门
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../im/im-intermediate.md" title="进阶功能" class="md-nav__link">
+      进阶功能
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../im/im-senior.md" title="高阶技巧" class="md-nav__link">
+      高阶技巧
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      服务端开发指南
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        服务端开发指南
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3-1" type="checkbox" id="nav-4-3-1">
+    
+    <label class="md-nav__link" for="nav-4-3-1">
+      Hook
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-3-1">
+        Hook
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../engine/hook-nodejs.md" title="NodeJS" class="md-nav__link">
+      NodeJS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../engine/hook-python.md" title="Python" class="md-nav__link">
+      Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../engine/hook-php.md" title="PHP" class="md-nav__link">
+      PHP
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../engine/hook-dotnet.md" title="C#" class="md-nav__link">
+      C#
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3-2" type="checkbox" id="nav-4-3-2">
+    
+    <label class="md-nav__link" for="nav-4-3-2">
+      管理开发指南
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-3-2">
+        管理开发指南
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../engine/server-python.md" title="Python" class="md-nav__link">
+      Python
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      消息推送
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        消息推送
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../push/push-overview/" title="服务总览" class="md-nav__link">
+      服务总览
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      开发指南
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        开发指南
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-1" type="checkbox" id="nav-5-2-1">
+    
+    <label class="md-nav__link" for="nav-5-2-1">
+      iOS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-1">
+        iOS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../push/apns-cert/" title="APNS 证书配置" class="md-nav__link">
+      APNS 证书配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-2" type="checkbox" id="nav-5-2-2">
+    
+    <label class="md-nav__link" for="nav-5-2-2">
+      Android
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-2">
+        Android
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../push/android-mixpush/" title="Android 混合推送" class="md-nav__link">
+      Android 混合推送
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      短信
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        短信
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../sms/sms-overview/" title="服务总览" class="md-nav__link">
+      服务总览
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2" type="checkbox" id="nav-6-2">
+    
+    <label class="md-nav__link" for="nav-6-2">
+      开发指南
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-2">
+        开发指南
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../sms/marketing/" title="营销短信" class="md-nav__link">
+      营销短信
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../sms/notice/" title="通知短信" class="md-nav__link">
+      通知短信
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../sms/user/" title="用户验证类短信" class="md-nav__link">
+      用户验证类短信
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      游戏+云端
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        游戏+云端
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1" checked>
+    
+    <label class="md-nav__link" for="nav-7-1">
+      多人实时对战
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-1">
+        多人实时对战
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../play-overview/" title="服务总览" class="md-nav__link">
+      服务总览
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        开发指南
+      </label>
+    
+    <a href="./" title="开发指南" class="md-nav__link md-nav__link--active">
+      开发指南
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="前言" class="md-nav__link">
+    前言
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="必备的基础知识" class="md-nav__link">
+    必备的基础知识
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sdk" title="SDK 导入和初始化" class="md-nav__link">
+    SDK 导入和初始化
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="打开客户端日志" class="md-nav__link">
+    打开客户端日志
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#userid" title="使用 UserID 建立与服务端的通信" class="md-nav__link">
+    使用 UserID 建立与服务端的通信
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="重要的注意事项" class="md-nav__link">
+    重要的注意事项
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="房间匹配" class="md-nav__link">
+    房间匹配
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#playroom" title="创建房间 PlayRoom" class="md-nav__link">
+    创建房间 PlayRoom
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="指定房间名" class="md-nav__link">
+    指定房间名
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="随机房间名" class="md-nav__link">
+    随机房间名
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id" title="指定玩家 ID" class="md-nav__link">
+    指定玩家 ID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="限制玩家人数" class="md-nav__link">
+    限制玩家人数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="玩家掉线之后被保留的时间" class="md-nav__link">
+    玩家掉线之后被保留的时间
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="设置房间的自定义属性" class="md-nav__link">
+    设置房间的自定义属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" title="是否开放房间允许别人加入" class="md-nav__link">
+    是否开放房间允许别人加入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" title="房间是否可见" class="md-nav__link">
+    房间是否可见
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" title="房间的相关限制和规则" class="md-nav__link">
+    房间的相关限制和规则
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" title="房间的失效" class="md-nav__link">
+    房间的失效
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" title="加入房间" class="md-nav__link">
+    加入房间
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" title="根据 Name 加入" class="md-nav__link">
+    根据 Name 加入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" title="随机加入" class="md-nav__link">
+    随机加入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" title="根据条件随机加入" class="md-nav__link">
+    根据条件随机加入
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" title="加入或者创建" class="md-nav__link">
+    加入或者创建
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" title="新玩家加入的事件通知" class="md-nav__link">
+    新玩家加入的事件通知
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" title="开始游戏" class="md-nav__link">
+    开始游戏
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#masterclient" title="MasterClient" class="md-nav__link">
+    MasterClient
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" title="房间的自定义属性" class="md-nav__link">
+    房间的自定义属性
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" title="初始化房间属性" class="md-nav__link">
+    初始化房间属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" title="修改房间属性" class="md-nav__link">
+    修改房间属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cas" title="CAS 原子修改模式" class="md-nav__link">
+    CAS 原子修改模式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" title="收到房间属性被修改的通知" class="md-nav__link">
+    收到房间属性被修改的通知
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_25" title="玩家的自定义属性" class="md-nav__link">
+    玩家的自定义属性
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_26" title="初始化玩家属性" class="md-nav__link">
+    初始化玩家属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" title="收到玩家的属性被修改的通知" class="md-nav__link">
+    收到玩家的属性被修改的通知
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" title="修改玩家属性" class="md-nav__link">
+    修改玩家属性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rpc" title="RPC 远程调用函数" class="md-nav__link">
+    RPC 远程调用函数
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rpc_1" title="定义 RPC 方法" class="md-nav__link">
+    定义 RPC 方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpc_2" title="发送 RPC 消息" class="md-nav__link">
+    发送 RPC 消息
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" title="指定消息接收者" class="md-nav__link">
+    指定消息接收者
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_30" title="退出房间" class="md-nav__link">
+    退出房间
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_31" title="内置的属性访问器" class="md-nav__link">
+    内置的属性访问器
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" title="当前加入的房间" class="md-nav__link">
+    当前加入的房间
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" title="当前房间里面所有玩家的列表" class="md-nav__link">
+    当前房间里面所有玩家的列表
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" title="当前玩家" class="md-nav__link">
+    当前玩家
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#userid_1" title="当前玩家的 UserID" class="md-nav__link">
+    当前玩家的 UserID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" title="当前所处在的游戏大厅" class="md-nav__link">
+    当前所处在的游戏大厅
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" title="当前游戏版本" class="md-nav__link">
+    当前游戏版本
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_37" title="断线重连" class="md-nav__link">
+    断线重连
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+    
+    <label class="md-nav__link" for="nav-7-2">
+      排行榜
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-2">
+        排行榜
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../leaderboard/leaderboard-overview.md" title="服务总览" class="md-nav__link">
+      服务总览
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../leaderboard/leaderboard.md" title="开发指南" class="md-nav__link">
+      开发指南
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      微信小程序
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        微信小程序
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../solution/weapp/" title="在微信小程序与小游戏中使用 LeanCloud" class="md-nav__link">
+      在微信小程序与小游戏中使用 LeanCloud
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="前言" class="md-nav__link">
+    前言
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="必备的基础知识" class="md-nav__link">
+    必备的基础知识
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sdk" title="SDK 导入和初始化" class="md-nav__link">
+    SDK 导入和初始化
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="打开客户端日志" class="md-nav__link">
+    打开客户端日志
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#userid" title="使用 UserID 建立与服务端的通信" class="md-nav__link">
+    使用 UserID 建立与服务端的通信
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="重要的注意事项" class="md-nav__link">
+    重要的注意事项
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="房间匹配" class="md-nav__link">
+    房间匹配
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#playroom" title="创建房间 PlayRoom" class="md-nav__link">
+    创建房间 PlayRoom
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="指定房间名" class="md-nav__link">
+    指定房间名
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="随机房间名" class="md-nav__link">
+    随机房间名
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id" title="指定玩家 ID" class="md-nav__link">
+    指定玩家 ID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="限制玩家人数" class="md-nav__link">
+    限制玩家人数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="玩家掉线之后被保留的时间" class="md-nav__link">
+    玩家掉线之后被保留的时间
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="设置房间的自定义属性" class="md-nav__link">
+    设置房间的自定义属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" title="是否开放房间允许别人加入" class="md-nav__link">
+    是否开放房间允许别人加入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" title="房间是否可见" class="md-nav__link">
+    房间是否可见
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" title="房间的相关限制和规则" class="md-nav__link">
+    房间的相关限制和规则
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" title="房间的失效" class="md-nav__link">
+    房间的失效
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" title="加入房间" class="md-nav__link">
+    加入房间
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" title="根据 Name 加入" class="md-nav__link">
+    根据 Name 加入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" title="随机加入" class="md-nav__link">
+    随机加入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" title="根据条件随机加入" class="md-nav__link">
+    根据条件随机加入
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" title="加入或者创建" class="md-nav__link">
+    加入或者创建
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" title="新玩家加入的事件通知" class="md-nav__link">
+    新玩家加入的事件通知
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" title="开始游戏" class="md-nav__link">
+    开始游戏
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#masterclient" title="MasterClient" class="md-nav__link">
+    MasterClient
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" title="房间的自定义属性" class="md-nav__link">
+    房间的自定义属性
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" title="初始化房间属性" class="md-nav__link">
+    初始化房间属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" title="修改房间属性" class="md-nav__link">
+    修改房间属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cas" title="CAS 原子修改模式" class="md-nav__link">
+    CAS 原子修改模式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" title="收到房间属性被修改的通知" class="md-nav__link">
+    收到房间属性被修改的通知
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_25" title="玩家的自定义属性" class="md-nav__link">
+    玩家的自定义属性
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_26" title="初始化玩家属性" class="md-nav__link">
+    初始化玩家属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" title="收到玩家的属性被修改的通知" class="md-nav__link">
+    收到玩家的属性被修改的通知
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" title="修改玩家属性" class="md-nav__link">
+    修改玩家属性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rpc" title="RPC 远程调用函数" class="md-nav__link">
+    RPC 远程调用函数
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rpc_1" title="定义 RPC 方法" class="md-nav__link">
+    定义 RPC 方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpc_2" title="发送 RPC 消息" class="md-nav__link">
+    发送 RPC 消息
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" title="指定消息接收者" class="md-nav__link">
+    指定消息接收者
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_30" title="退出房间" class="md-nav__link">
+    退出房间
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_31" title="内置的属性访问器" class="md-nav__link">
+    内置的属性访问器
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" title="当前加入的房间" class="md-nav__link">
+    当前加入的房间
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" title="当前房间里面所有玩家的列表" class="md-nav__link">
+    当前房间里面所有玩家的列表
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" title="当前玩家" class="md-nav__link">
+    当前玩家
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#userid_1" title="当前玩家的 UserID" class="md-nav__link">
+    当前玩家的 UserID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" title="当前所处在的游戏大厅" class="md-nav__link">
+    当前所处在的游戏大厅
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" title="当前游戏版本" class="md-nav__link">
+    当前游戏版本
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_37" title="断线重连" class="md-nav__link">
+    断线重连
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="play-unity">Play 开发指南 &middot; Unity<a class="headerlink" href="#play-unity" title="Permanent link">&para;</a></h1>
+<h2 id="_1">前言<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Play 是一个基于 C# 编写的 Unity 的组件，它具备如下几项主要的功能（包括但不限于）：</p>
+<ul>
+<li>使用 UserID 建立与服务端的通信</li>
+<li>创建对战房间(PlayRoom)</li>
+<li>获取房间列表</li>
+<li>加入房间</li>
+<li>随机加入房间</li>
+<li>根据匹配条件加入房间</li>
+<li>寻找好友所在的房间</li>
+<li>设置房间属性</li>
+<li>获取房间玩家（Player）列表</li>
+<li>修改玩家的属性</li>
+<li>发送和接收 RPC 消息</li>
+<li>离开房间</li>
+</ul>
+<p>Play 解决了如下几种游戏场景的服务端需求（包括但不限于）：</p>
+<ul>
+<li>MOBA 多人在线实时对战</li>
+<li>卡牌棋牌桌游</li>
+<li>战棋</li>
+</ul>
+<blockquote>
+<p>Play 为有强联网需求的网络游戏提供了一整套的客户端 SDK 解决方案，因此开发团队不再需要自建服务端，从而节省大部分开发和运维成本。</p>
+</blockquote>
+<h2 id="_2">必备的基础知识<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Play 是基于 C# 开发运行在 Unity 的 Mono .NET 下的 SDK，因此开发者需要掌握如下基础知识：</p>
+<ul>
+<li>C# 的编程基础知识，特别是 Attribute、Event 等概念。</li>
+<li>帧同步和状态同步的两种网游类型分别是如何实现的？</li>
+</ul>
+<p>以上问题答案请开发者自行学习掌握。</p>
+<h2 id="sdk">SDK 导入和初始化<a class="headerlink" href="#sdk" title="Permanent link">&para;</a></h2>
+<p>请阅读 <a href="play-quick-start.html#安装和初始化">安装和初始化</a>，获取动态链接库。</p>
+<h3 id="_3">打开客户端日志<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>如下代码将打开客户端的日志，可以帮助调试和进行问题反馈：</p>
+<div class="codehilite"><pre><span></span>// 日志都会使用 Unity.Debug 打印在控制台
+Play.ToggleLog();
+</pre></div>
+
+<h2 id="userid">使用 UserID 建立与服务端的通信<a class="headerlink" href="#userid" title="Permanent link">&para;</a></h2>
+<p>Play 目前只需要客户端设置一个 UserID 就可以直接连接云端，这个 UserID 拥有如下限制：</p>
+<ul>
+<li>不支持中文和特殊字符（包括 <code class="codehilite">，！@#￥%……&amp;*（）</code> 等），但可以是下划线 <code class="codehilite">_</code>。</li>
+<li>长度不能超过 64 字符</li>
+<li>一个应用内全局唯一</li>
+</ul>
+<p>下面我们使用 Mario 作为 UserID 连接云端服务器，成功之后服务端会回调 <code class="codehilite">OnAuthenticated</code>：</p>
+<div class="codehilite"><pre><span></span>using LeanCloud;
+
+namespace PlayDocSample
+{
+    /// <span class="nt">&lt;summary&gt;</span>
+    /// 注册回调的类型，必须继承自 PlayMonoBehaviour
+    /// <span class="nt">&lt;/summary&gt;</span>
+    public class SampleConnect : PlayMonoBehaviour
+    {
+        void start()
+        {
+            // 打开调试日志
+            Play.ToggleLog(true);
+            // 设置 UserID
+            Play.UserID = &quot;Mario&quot;;
+            // 声明游戏版本，不同版本的玩家是不会匹配到同一个房间
+            Play.Connect(&quot;0.0.1&quot;);
+            // 如果成功则会回调 OnAuthenticated
+        }
+
+        [PlayEvent]
+        public override void OnAuthenticated()
+        {
+            Play.Log(&quot;OnAuthenticated&quot;);
+        }
+
+        protected override void Awake()
+        {
+            base.Awake();
+        }
+
+        protected override void OnDestroy()
+        {
+            base.OnDestroy();
+        }
+    }
+}
+</pre></div>
+
+<h3 id="_4">重要的注意事项<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>在上面的例子中可以看见，代码声明了一个 <code class="codehilite">ConnectSample</code> 类，它继承自 <code class="codehilite">PlayMonoBehaviour</code>，所有的事件回调都加上了 <code class="codehilite">[PlayEvent]</code> 属性标记，这些都是<strong>必须的</strong>。后面的示例代码都会如此，开发者的代码也需要遵守这一约定，少了一项，事件回调就不会生效。</p>
+<p>因此任何一个使用 Play 进行游戏开发的 <code class="codehilite">PlayMonoBehaviour</code> 子类必须满足如下条件：</p>
+<ol>
+<li>继承自 <code class="codehilite">PlayMonoBehaviour</code></li>
+<li>事件回调必须带有 <code class="codehilite">[PlayEvent]</code> 标记</li>
+<li>尤其重要的是，<strong>如果需要 new（重写）或者 override（覆盖）<code class="codehilite">Awake</code> 和 <code class="codehilite">OnDestroy</code> 方法的时候，必须调用父类的方法 <code class="codehilite">base.Awake()</code> 或者 <code class="codehilite">base.OnDestroy</code></strong>。</li>
+</ol>
+<h2 id="_5">房间匹配<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>注意，在游戏当中都有 Lobby(游戏大厅)的概念，而房间都会属于一个 Lobby，当前 Play 默认一个应用下所有的房间都处在同一个 Lobby 下，这个就是全局的大厅（在之后的迭代版本中会根据用户的需求逐渐开放用户自定义的游戏大厅，敬请期待）。</p>
+<h3 id="playroom">创建房间 PlayRoom<a class="headerlink" href="#playroom" title="Permanent link">&para;</a></h3>
+<p>创建房间是游戏开始的前提，只有同在一个房间内的玩家才可以一起玩游戏。</p>
+<p>房间的名称是全局唯一的标识，这个标识可以由开发者自己指定也可以由 SDK 内部随机生成，并且在创建房间的同时指定一些配置项，比如房间最大玩家数量之类的。</p>
+<p>下面通过几个小节来介绍创建房间的方式以及如何设置各种配置项：</p>
+<h4 id="_6">指定房间名<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>using LeanCloud;
+
+namespace TestUnit.NetFx46.Docs
+{
+
+    public class SampleCreateRoom : PlayMonoBehaviour
+    {
+        void start()
+        {
+            // 打开调试日志
+            Play.ToggleLog(true);
+            // 设置 UserID
+            Play.UserID = &quot;Mario&quot;;
+            // 声明游戏版本，不同游戏版本的玩家会被分配在不同的隔离区域中
+            Play.Connect(&quot;0.0.1&quot;);
+            // 如果成功则会回调 OnAuthenticated
+        }
+
+
+        [PlayEvent]
+        public override void OnAuthenticated()
+        {
+            Play.Log(&quot;OnAuthenticated&quot;);
+            // 设置房间全局唯一的名称为 「test-game-001」 
+            Play.CreateRoom(&quot;test-game-001&quot;);
+        }
+
+        /// <span class="nt">&lt;summary&gt;</span>
+        /// 如果成功创建，则会回调到 OnCreatedRoom
+        /// <span class="nt">&lt;/summary&gt;</span>
+        [PlayEvent]
+        public override void OnCreatedRoom()
+        {
+            // 打印房间名称
+            Play.Log(&quot;OnCreatedRoom&quot;, Play.Room.Name);
+        }
+
+
+        /// <span class="nt">&lt;summary&gt;</span>
+        /// 如果创建失败，则会回调 OnCreateRoomFailed
+        /// <span class="nt">&lt;/summary&gt;</span>
+        /// <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;errorCode&quot;</span><span class="nt">&gt;&lt;/param&gt;</span>
+        /// <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;reason&quot;</span><span class="nt">&gt;&lt;/param&gt;</span>
+        [PlayEvent]
+        public override void OnCreateRoomFailed(int errorCode, string reason)
+        {
+            Play.LogError(errorCode, reason);
+        }
+    }
+}
+</pre></div>
+
+<p>注：因为创建房间的逻辑和顺序都一致，因此本小节之后介绍创建房间时，为了突出重点及更好的阅读体验，我们将不再给出每一种回调的实例代码，请参照上述代码即可。</p>
+<p><strong>适用场景</strong>：根据用户输入名称创建房间。</p>
+<div class="codehilite"><pre><span></span>var roomName = inputLable.text;
+Play.CreateRoom(roomName);
+</pre></div>
+
+<h4 id="_7">随机房间名<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<p>如果不传入任何参数创建房间，<strong>客户端会随机生成一个名称</strong>。这个不用开发者担心，算法是经过测试，名字重复的概率约等于 GUID 重复的概率，所以几乎不可能。</p>
+<div class="codehilite"><pre><span></span>Play.CreateRoom();
+</pre></div>
+
+<h4 id="id">指定玩家 ID<a class="headerlink" href="#id" title="Permanent link">&para;</a></h4>
+<p>这个功能的解决的需求是：只允许一些特定的 ID 玩家可以加入到房间或者当前玩家开好房间，等待一些特定的朋友来加入。示例代码如下：</p>
+<p>下面是 <code class="codehilite">Play.CreateRoom(string roomName = null, IEnumerable&lt;string&gt; expectedUsers = null)</code> 的两种重载的实例代码：</p>
+<div class="codehilite"><pre><span></span><span class="o">//</span> <span class="err">指定</span> <span class="nt">bill</span> <span class="err">和</span> <span class="nt">steve</span> <span class="err">才可以加入这个房间</span>
+<span class="nt">Play</span><span class="p">.</span><span class="nc">CreateRoom</span><span class="o">(</span><span class="nt">expectedUsers</span><span class="o">:</span> <span class="nt">new</span> <span class="nt">string</span><span class="cp">[]</span> <span class="p">{</span> <span class="err">&quot;bill&quot;,</span> <span class="err">&quot;steve&quot;</span> <span class="p">}</span><span class="o">);</span>
+
+<span class="o">//</span> <span class="err">或者顺便设置一下</span> <span class="nt">Room</span> <span class="nt">Name</span>
+<span class="nt">Play</span><span class="p">.</span><span class="nc">CreateRoom</span><span class="o">(</span><span class="s2">&quot;RichMen&quot;</span><span class="o">,</span> <span class="nt">new</span> <span class="nt">string</span><span class="cp">[]</span> <span class="p">{</span> <span class="err">&quot;bill&quot;,</span> <span class="err">&quot;steve&quot;</span> <span class="p">}</span><span class="o">);</span>
+</pre></div>
+
+<p>注意，这种方式创建成功之后，被指定的玩家（例如上述代码中的 steve）也还需要调用一次 <code class="codehilite">JoinRoom(&quot;RichMen&quot;)</code> 主动加入到这个房间。<code class="codehilite">Play.CreateRoom(new string[] { &quot;bill&quot;, &quot;steve&quot; });</code> 只是表示 bill 和 steve 已经把房间位置给「占位」了，但是等到他们自己上线之后，还需要主动加入才能真正进入房间。</p>
+<p><strong>适用场景</strong>：好友组局一起玩游戏（代码参照基础用法里面的示例）。</p>
+<h4 id="_8">限制玩家人数<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<p>目前 Play 所有的房间最多允许 <strong>10</strong> 人同时在一个房间进行游戏对战，有一些游戏甚至需要设置房间最多人数要更少，比如斗地主只允许 3 个人加入，一旦人满了，其他的人是不可以加入的，因此在创建房间的时候可以设置房间的 MaxPlayerCount：</p>
+<div class="codehilite"><pre><span></span>var roomConfig = PlayRoom.RoomConfig.Default;
+
+roomConfig.MaxPlayerCount = 4;
+
+Play.CreateRoom(roomConfig);
+
+// 也可以顺便设置一下 room name 
+Play.CreateRoom(roomConfig,&quot;max4-room&quot;);
+</pre></div>
+
+<p><strong>适用场景</strong>：游戏本身有严格的人数要求，比如三国杀区分 1v1 两人局、五人局、3v3 六人局和标准八人局。下面示例将会创建一个 3v3 六人局的三国杀房间：</p>
+<div class="codehilite"><pre><span></span>var roomConfig = PlayRoom.RoomConfig.Default;
+
+roomConfig.MaxPlayerCount = 6;
+// 房间名随机即可，因为 room name 没有必要一定要显示出来
+Play.CreateRoom(roomConfig);
+</pre></div>
+
+<h4 id="_9">玩家掉线之后被保留的时间<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<p>默认情况下，玩家在掉线之后，会<strong>立即离开房间</strong>，可以通过设置这个保留时间，来避免玩家一掉线就默认被踢出房间。<strong>保留时间最长可设置 300 秒（ 5 分钟）</strong>，300 秒过后用户在房间内的信息将会被销毁。</p>
+<p>比如如下代码指定玩家掉线之后的保留时间是 2 分钟：</p>
+<div class="codehilite"><pre><span></span>var roomConfig = PlayRoom.RoomConfig.Default;
+// 单位是秒
+roomConfig.PlayerTimeToKeep = 120;// 设置成 120 秒
+
+Play.CreateRoom(roomConfig);
+</pre></div>
+
+<h3 id="_10">设置房间的自定义属性<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>房间的自定义属性指的是一些 key-value 的键值对，在创建成功之后，云端也会保留一份拷贝（注意这里不是持久化存储，当该房间失效之后所有的自定义属性都会被销毁）。</p>
+<div class="codehilite"><pre><span></span>var roomConfig = PlayRoom.RoomConfig.Default;
+
+roomConfig.CustomRoomProperties = new Hashtable()
+{
+    { &quot;level&quot;, 1000 },
+    { &quot;rankPoints&quot;, 3011 }
+};
+roomConfig.LobbyMatchKeys = new string[] { &quot;rankPoints&quot; };
+
+Play.CreateRoom(roomConfig);
+</pre></div>
+
+<p>此处需要配合 <a href="#根据条件随机加入">根据条件随机加入</a> 来理解 <code class="codehilite">LobbyMatchKeys</code> 的作用。</p>
+<h3 id="_11">是否开放房间允许别人加入<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>创建一个房间后，不希望其他人家加入，比如有一些定时副本，玩家创建好房间之后，等到副本开始之后，再允许其他玩家加入：</p>
+<div class="codehilite"><pre><span></span>var roomConfig = PlayRoom.RoomConfig.Default;
+
+roomConfig.IsOpen = false;
+
+// 如果不设置 IsOpen，云端创建的房间默认都允许其他人加入的
+Play.CreateRoom(roomConfig);
+</pre></div>
+
+<p>如果在某一个时刻，希望重新打开房间，允许其他人加入，只需要将这个属性设置成 true 即可：</p>
+<div class="codehilite"><pre><span></span>Play.Room.IsOpen = true;
+</pre></div>
+
+<h3 id="_12">房间是否可见<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>创建一个房间的时候选择不可见，这个房间就不会被其他人匹配到（其他人调用 <code class="codehilite">JoinRandomRoom</code> 的时候不会参与匹配）：</p>
+<div class="codehilite"><pre><span></span>var roomConfig = PlayRoom.RoomConfig.Default;
+
+roomConfig.IsVisible = false;
+
+// 如果不设置 IsVisible，云端创建的房间默认都会参与 JoinRandomRoom 的匹配中
+Play.CreateRoom(roomConfig);
+</pre></div>
+
+<h3 id="_13">房间的相关限制和规则<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<h4 id="_14">房间的失效<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
+<p>下列情况会导致房间在云端被清除，也就是认为这个房间失效了：</p>
+<ol>
+<li>所有成员都离开了</li>
+<li>所有成员都掉线，并且都没有重连回来，超过 30 分钟，云端就会认为失效</li>
+</ol>
+<h3 id="_15">加入房间<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>当前玩家成功加入到房间后，云端会向已经在房间里面的其他玩家下发一条「有新玩家加入」的通知，具体的事件回调请查看 <a href="#新玩家加入的事件通知">新玩家加入的事件通知</a>。</p>
+<h4 id="name">根据 Name 加入<a class="headerlink" href="#name" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>public class SampleJoinRoom : PlayMonoBehaviour
+{
+    void start()
+    {
+        // 打开调试日志
+        Play.ToggleLog(true);
+        // 设置 UserID
+        Play.UserID = &quot;Mario&quot;;
+        // 声明游戏版本，不同游戏版本的玩家会被分配在不同的隔离区域中
+        Play.Connect(&quot;0.0.1&quot;);
+        // 如果鉴权成功则会触发 OnAuthenticated 回调
+    }
+
+
+    [PlayEvent]
+    public override void OnAuthenticated()
+    {
+        Play.Log(&quot;OnAuthenticated&quot;);
+
+        // 加入 RichMen 房间
+        Play.JoinRoom(&quot;RichMen&quot;);
+
+    }
+
+    [PlayEvent]
+    public override void OnJoinedRoom()
+    {
+        Play.Log(&quot;OnJoinedRoom&quot;);
+
+        var name = Play.Room.Name;
+    }
+
+    [PlayEvent]
+    public override void OnJoinRoomFailed(int errorCode, string reason)
+    {
+
+    }
+}
+</pre></div>
+
+<p>加入成功则会回调 <code class="codehilite">OnJoinedRoom</code>，加入失败则会回调 <code class="codehilite">OnJoinRoomFailed</code>。</p>
+<p><strong>适用场景</strong>：与好友一起游戏。用户自己输入了一个房间名，并且创建成功，然后通过聊天工具告诉了好友，然后好友通过房间名直接加入进来。</p>
+<div class="codehilite"><pre><span></span>var roomName = &quot;get_from_qq&quot;;
+Play.JoinRoom(roomName);
+</pre></div>
+
+<h4 id="_16">随机加入<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h4>
+<p>随机加入任何一个开放的有空位的房间：</p>
+<div class="codehilite"><pre><span></span>Play.JoinRandomRoom();
+</pre></div>
+
+<p>除非是所有可用的房间都满员了，才会出现随机加入失败的情况，一般情况下都会成功。</p>
+<p>如果随机加入失败，会触发 <code class="codehilite">OnJoinedRoomFailed</code> 回调，可以选择在这个回调里面继续 <a href="#创建房间">创建房间</a>。</p>
+<p>注意，不可见的房间是不会参与随机房间的匹配的。</p>
+<p><strong>适用场景</strong>：快速加入已有房间（不创建新的房间）</p>
+<h4 id="_17">根据条件随机加入<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h4>
+<p>配合前面的<a href="#设置房间的自定义属性">设置房间的自定义属性</a>的代码：</p>
+<div class="codehilite"><pre><span></span>var randomLobbyMatchKeys = new Hashtable
+{
+    { &quot;rankPoints&quot;, 3000 }
+};
+
+// 根据 key-value 匹配加入
+Play.JoinRandomRoom(randomLobbyMatchKeys);
+</pre></div>
+
+<p>加入成功则会回调 <code class="codehilite">OnJoinedRoom</code>，加入失败则会回调 <code class="codehilite">OnJoinRoomFailed</code>。</p>
+<p>注意，根据条件随机加入有如下店址：</p>
+<ol>
+<li>不可见的房间是不会参与随机房间的匹配</li>
+<li>目前只支持条件相等的匹配，比如我们不支持 rankPoints 小于 3000 的这种匹配</li>
+</ol>
+<h3 id="_18">加入或者创建<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p>解决的需求是：优先检测传入的 room name 对应的房间是否存在，如果存在就直接加入，如果不存在，就直接创建：</p>
+<div class="codehilite"><pre><span></span>var roomName = &quot;i-want-this-name&quot;;
+Play.JoinOrCreate(roomName);
+</pre></div>
+
+<p>或者指定一些 key-value 的自定义属性，例如，我要加入一个指定名字的房间，如果不存在，请帮我创建这个房间并且把我指定的自定义属性也赋值给房间：</p>
+<div class="codehilite"><pre><span></span>var createWithAttributes = new Hashtable
+{
+    { &quot;rankPoints&quot;, 1000 }
+};
+
+var roomConfig = PlayRoom.RoomConfig.Default;
+
+roomConfig.CustomRoomProperties = createWithAttributes;
+
+roomConfig.LobbyMatchKeys = new string[] { &quot;rankPoints&quot; };
+
+Play.JoinOrCreate(roomConfig);
+</pre></div>
+
+<p>如果加入成功则会回调 <code class="codehilite">OnJoinedRoom</code>，如果是创建成功，则会先调用 <code class="codehilite">OnCreatedRoom</code> 然后再调用 <code class="codehilite">OnJoinedRoom</code>。</p>
+<p><strong>适用场景</strong>：两人（或者多人）约定了一个房间名，但是这些人进入游戏的时间不一样，因此所有人都调用 <code class="codehilite">JoinOrCreate</code> 并且传入一样的名字，则 SDK 会确保这些人一定会加入到一个相同的房间内。</p>
+<h3 id="_19">新玩家加入的事件通知<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<p>A 创建了房间，然后 B 加入进来（不管是随机加入还是匹配加入，还是使用 Name 直接加入），A 都会收到 B 加入到房间的事件通知 <code class="codehilite">OnNewPlayerJoinedRoom</code>：</p>
+<div class="codehilite"><pre><span></span><span class="k">[PlayEvent]</span>
+<span class="na">public override void OnNewPlayerJoinedRoom(Player player)</span>
+<span class="na">{</span>
+    <span class="na">Play.Log(player.UserID);</span>
+<span class="na">}</span>
+</pre></div>
+
+<p>如果 C 先于 B 加入了，C 也会收到 <code class="codehilite">OnNewPlayerJoinedRoom</code> 的事件通知。</p>
+<h2 id="_20">开始游戏<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h2>
+<h2 id="masterclient">MasterClient<a class="headerlink" href="#masterclient" title="Permanent link">&para;</a></h2>
+<p>结合前面的章节，我们需要明确一点，在无服务端进行网游对战的时候，通常都会有一个主机的概念（参照魔兽争霸局域网游戏里面的创建房间的 Host），因此 Play 提供了一个 MasterClient 的概念，指的就是房间 Host 玩家，它可能由以下几种玩家承担：</p>
+<ol>
+<li>房间最初的创建者，在他加入之后，自动成为第一任 MasterClient。</li>
+<li>A 创建了房间，随后 B 和 C 加入，然后因为 A 的网络异常，TA 掉线了，这个时候服务端会从现有的 B 和 C 里面挑选一个作为新任的 MasterClient，并且会下发 <code class="codehilite">OnMasterClientSwitched</code> 的事件回调通知</li>
+<li>在 A 回来之后，A 也不会重新成为 MasterClient。</li>
+</ol>
+<p>如下代码演示如何监听 MasterClient 产生变化的事件回调：</p>
+<div class="codehilite"><pre><span></span><span class="k">[PlayEvent]</span>
+<span class="na">public override void OnMasterClientSwitched(Player masterPlayer) </span>
+<span class="na">{</span>
+    <span class="na">Play.Log(&quot;new master client is&quot;,masterPlayer.UserID);</span>
+<span class="na">}</span>
+</pre></div>
+
+<h2 id="_21">房间的自定义属性<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h2>
+<p>房间的自定义属性是预留给开发者自定义业务逻辑的，当你设置了一个属性之后，SDK 会上传到云端，云端会将这些属性下发给在同一个房间的其他玩家。</p>
+<h3 id="_22">初始化房间属性<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<p><a href="#设置房间的自定义属性">设置房间的自定义属性</a> 小节里面的代码就是初始化房间属性的代码，这里要详细描述一下自定义属性支持的类型：</p>
+<ul>
+<li>bool</li>
+<li>string</li>
+<li>数字类型，像 byte、int、float、double 等基础类型都支持。</li>
+<li>字典类型 Dictionary</li>
+<li>List 类型，如 List<int>、List<string> 等。</li>
+</ul>
+<p>未来会支持更多类型，包括 Hashtable 或者是自定义类型。</p>
+<div class="codehilite"><pre><span></span>var roomConfig = PlayRoom.RoomConfig.Default;
+roomConfig.CustomRoomProperties = new Hashtable()
+{
+    { &quot;vip&quot;, ture },
+    { &quot;note&quot;, &quot;welcome&quot; },
+    { &quot;bonus&quot;,500 }
+};
+Play.CreateRoom(roomConfig);
+</pre></div>
+
+<h3 id="_23">修改房间属性<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<p>自定义属性的修改是增量修改的，比如当前已经有了一些属性，然后你只要设置一些增量就可以，客户端会做自动的合并，云端也会做校验，下发的通知也是做增量下发的：</p>
+<div class="codehilite"><pre><span></span><span class="k">[PlayEvent]</span>
+<span class="na">public override void OnJoinedRoom()</span>
+<span class="na">{</span>
+    <span class="na">var toUpdate</span> <span class="o">=</span> <span class="s">new Hashtable()</span>
+<span class="s">    {</span>
+<span class="s">        { &quot;level&quot;, 1200 }</span>
+<span class="s">    };</span>
+<span class="s">    Play.Room.SetCustomProperties(toUpdate);</span>
+<span class="na">}</span>
+</pre></div>
+
+<h3 id="cas">CAS 原子修改模式<a class="headerlink" href="#cas" title="Permanent link">&para;</a></h3>
+<p>为了原子化操作属性，也是为了防止冲突，Play 也支持以 CAS (check and save) 模式修改属性：</p>
+<div class="codehilite"><pre><span></span><span class="k">[PlayEvent]</span>
+<span class="na">public override void OnJoinedRoom()</span>
+<span class="na">{</span>
+    <span class="na">var toUpdate</span> <span class="o">=</span> <span class="s">new Hashtable()</span>
+<span class="s">    {</span>
+<span class="s">        { &quot;level&quot;, 1200 }</span>
+<span class="s">    };</span>
+
+    <span class="na">var when</span> <span class="o">=</span> <span class="s">new Hashtable()</span>
+<span class="s">    {</span>
+<span class="s">        { &quot;level&quot;, 1000 }</span>
+<span class="s">    };</span>
+<span class="s">    Play.Room.SetCustomProperties(toUpdate, when);</span>
+<span class="na">}</span>
+</pre></div>
+
+<p>上述代码的含义是：如果当前 level 是 1000 那么就修改为 level 值为 1200，否则就不修改。</p>
+<h3 id="_24">收到房间属性被修改的通知<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="k">[PlayEvent]</span>
+<span class="na">public override void OnRoomCustomPropertiesUpdated(Hashtable updatedProperties)</span>
+<span class="na">{</span>
+    <span class="na">Play.Log(&quot;OnRoomCustomPropertiesUpdated&quot;);</span>
+    <span class="na">// 修改的增量会被通知给所有在房间的玩家</span>
+    <span class="na">Play.Log(updatedProperties.ToLog());</span>
+<span class="na">}</span>
+</pre></div>
+
+<h2 id="_25">玩家的自定义属性<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h2>
+<p>玩家（Player）的自定义属性与房间的自定义属性无本质差别，对外暴露的接口都是一个 Hashtable，操作也几近类似，只是事件回调不一样。</p>
+<h3 id="_26">初始化玩家属性<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="k">[PlayEvent]</span>
+<span class="na">public override void OnNewPlayerJoinedRoom(Player player)</span>
+<span class="na">{</span>
+    <span class="na">var initData</span> <span class="o">=</span> <span class="s">new Hashtable();</span>
+<span class="s">    initData.Add(&quot;ready&quot;, false);</span>
+<span class="s">    initData.Add(&quot;gold&quot;, 200);</span>
+
+    <span class="na">player.CustomProperties</span> <span class="o">=</span> <span class="s">initData;</span>
+<span class="na">}</span>
+</pre></div>
+
+<p>在玩家加入房间之后，初始化 TA 的自定义属性。</p>
+<h3 id="_27">收到玩家的属性被修改的通知<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<p>注意，这里有一个点，不论是 A 修改了自己的属性，还是 A 修改了其他人的属性，都会在这里进行事件回调的通知：</p>
+<div class="codehilite"><pre><span></span><span class="k">[PlayEvent]</span>
+<span class="na">public override void OnPlayerCustomPropertiesChanged(Player player, Hashtable updatedProperties)</span>
+<span class="na">{</span>
+    <span class="na">Play.Log(&quot;OnPlayerCustomPropertiesChanged&quot;);</span>
+    <span class="na">Play.Log(player.UserID, updatedProperties.ToLog());</span>
+<span class="na">}</span>
+</pre></div>
+
+<h3 id="_28">修改玩家属性<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>var cards = new Hashtable();
+cards.Add(&quot;cards&quot;, new string[] { &quot;1&quot;, &quot;2&quot;, &quot;3&quot; });
+Play.Player.CustomProperties = cards;
+</pre></div>
+
+<p>上述操作也会触发 <code class="codehilite">OnPlayerCustomPropertiesChanged</code>。</p>
+<h2 id="rpc">RPC 远程调用函数<a class="headerlink" href="#rpc" title="Permanent link">&para;</a></h2>
+<p>RPC 是提供给开发者自定义消息的一种方式，开发者可以通过定义 RPC ，发送 RPC 消息来实现多端的通信。</p>
+<p>注意，当前玩家必须处于一个房间内才可以发送 RPC 消息，否则 RPC 消息不会触发。</p>
+<p>另外，SDK 内置的回调都会有 <code class="codehilite">[PlayEvent]</code>，而开发者自定义的 RPC 回调则必须有 <code class="codehilite">[PlayRPC]</code> 修饰符。</p>
+<h3 id="rpc_1">定义 RPC 方法<a class="headerlink" href="#rpc_1" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="k">[PlayRPC]</span>
+<span class="na">public void OnSomebodySayHello(string words)</span>
+<span class="na">{</span>
+    <span class="na">var length</span> <span class="o">=</span> <span class="s">words.Length;</span>
+<span class="na">}</span>
+</pre></div>
+
+<h3 id="rpc_2">发送 RPC 消息<a class="headerlink" href="#rpc_2" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>Play.RPC(&quot;OnSomebodySayHello&quot;, PlayRPCTargets.All, &quot;hello&quot;);
+</pre></div>
+
+<p>上述消息发送出去，所有在房间的玩家都会收到 <code class="codehilite">OnSomebodySayHello</code> 的回调通知。</p>
+<h4 id="_29">指定消息接收者<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h4>
+<p>只发给 MasterClient:</p>
+<div class="codehilite"><pre><span></span> Play.RPC(&quot;OnSomebodySayHello&quot;, PlayRPCTargets.MasterClient, &quot;hello&quot;);
+</pre></div>
+
+<p>发给其他人（自己不接收)：</p>
+<div class="codehilite"><pre><span></span>Play.RPC(&quot;OnSomebodySayHello&quot;, PlayRPCTargets.Others, &quot;hello&quot;);
+</pre></div>
+
+<p>该消息是需要被缓存的，当前在线的玩家实时接收，并且后来加入的玩家在加入房间之后，也能收到:</p>
+<div class="codehilite"><pre><span></span>Play.RPC(&quot;OnSomebodySayHello&quot;, PlayRPCTargets.OthersBuffered, &quot;hello&quot;);
+</pre></div>
+
+<h2 id="_30">退出房间<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>Play.LeaveRoom();
+</pre></div>
+
+<p>退出成功的回调如下：</p>
+<div class="codehilite"><pre><span></span><span class="k">[PlayEvent]</span>
+<span class="na">public override void OnLeftRoom()</span>
+<span class="na">{</span>
+    <span class="na">Play.Log(&quot;OnLeftRoom&quot;);</span>
+<span class="na">}</span>
+</pre></div>
+
+<p>假设在 B 退出房间之前，房间里面有 A、B、C 三位玩家，B 调用 <code class="codehilite">Play.LeaveRoom()</code> 之后，A 和 C 就会收到 <code class="codehilite">OnPlayerLeftRoom</code> 的事件通知：</p>
+<div class="codehilite"><pre><span></span><span class="k">[PlayEvent]</span>
+<span class="na">public override void OnPlayerLeftRoom(Player player)</span>
+<span class="na">{</span>
+    <span class="na">Play.Log(&quot;someone left room with user id:&quot;, player.UserID);</span>
+<span class="na">}</span>
+</pre></div>
+
+<h2 id="_31">内置的属性访问器<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h2>
+<p>通过 SDK 开放的属性访问器，可以快捷地读取如下信息：</p>
+<h3 id="_32">当前加入的房间<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>var room = Play.Room;
+</pre></div>
+
+<h3 id="_33">当前房间里面所有玩家的列表<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>var players = Play.Players;
+
+// 通过 room 来获取
+var playersInRoom = Play.Room.Players;
+
+// 以上两行语句获取的列表是一样的
+</pre></div>
+
+<h3 id="_34">当前玩家<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>var player = Play.Player;
+</pre></div>
+
+<h3 id="userid_1">当前玩家的 UserID<a class="headerlink" href="#userid_1" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>var userId = Play.UserID;
+</pre></div>
+
+<h3 id="_35">当前所处在的游戏大厅<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>var lobby = Play.Lobby;
+</pre></div>
+
+<h3 id="_36">当前游戏版本<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>var gameVersion = Play.GameVersion;
+</pre></div>
+
+<h2 id="_37">断线重连<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h2>
+<p>断线之后，SDK 没有做<strong>自动的断线重连</strong>，假设游戏允许玩家掉线之后重连，并且加入原来的房间，需要掉线的玩家进行如下操作：</p>
+<ol>
+<li>发现连接断开（网络异常或者其他原因导致连接断开），SDK 会触发 <code class="codehilite">OnDisconnected</code> 回调。</li>
+<li>尝试调用 <code class="codehilite">Play.Connect()</code> 重新打开连接。</li>
+<li>在 <code class="codehilite">OnAuthenticated</code> 回调里面调用 <code class="codehilite">Play.RejoinRoom()</code> 重新加入原来的房间。</li>
+<li>然后通过监听 <code class="codehilite">OnJoinedRoom</code> 来重新回到房间。</li>
+<li>配合监听 <code class="codehilite">OnJoinRoomFailed</code> 来判断房间是否失效或者是其他什么原因导致重新加入失败。</li>
+<li>如果当前用户成功回到房间，触发如下通知：</li>
+<li><code class="codehilite">OnPlayerCustomPropertiesChanged</code> 来告知当前用户上次掉线之前最新的 Player 上的自定义属性</li>
+<li><code class="codehilite">OnRoomCustomPropertiesUpdated</code> 来告知当前用户上次掉线之前最新的 Room 上的自定义属性</li>
+</ol>
+<p>假设房间内已有 A、B、C 三名玩家，然后此时忽然 B 掉线了，此时如果创建房间的时候指定了 <a href="#玩家掉线之后被保留的时间">玩家掉线之后被保留的时间</a>，就会出现如下两种情况：</p>
+<ol>
+<li>
+<p>如果设置了类似 <code class="codehilite">roomConfig.PlayerTimeToKeep = 30</code> 这样的有效值，那么 B 玩家在掉线时，会产生如下情景：</p>
+<p>A 和 C 将会得到如下通知：</p>
+<div class="codehilite"><pre><span></span><span class="k">[PlayEvent]</span>
+<span class="na">public override void OnPlayerActivityChanged(Player player)</span>
+<span class="na">{</span>
+   <span class="na">// player.IsInactive 此时应该为 true</span>
+   <span class="na">Play.Log(&quot;OnPlayerActivityChanged&quot;, player.UserID, player.IsInactive);</span>
+<span class="na">}</span>
+</pre></div>
+
+<p>B 会得到如下通知：</p>
+<div class="codehilite"><pre><span></span><span class="k">[PlayEvent]</span>
+<span class="na">public override void OnDisconnected()</span>
+<span class="na">{</span>
+   <span class="na">Play.Log(&quot;OnDisconnected&quot;);</span>
+<span class="na">}</span>
+</pre></div>
+
+<p>如果 B 在有效期之内调用了 <code class="codehilite">Play.RejoinRoom()</code> 并且成功回到了房间，那么 A 和 C 将会再次收到 <code class="codehilite">OnPlayerActivityChanged</code> 的回调：</p>
+<div class="codehilite"><pre><span></span><span class="k">[PlayEvent]</span>
+<span class="na">public override void OnPlayerActivityChanged(Player player)</span>
+<span class="na">{</span>
+    <span class="na">// player.IsInactive 此时应该为 false</span>
+    <span class="na">Play.Log(&quot;OnPlayerActivityChanged&quot;, player.UserID, player.IsInactive);</span>
+<span class="na">}</span>
+</pre></div>
+
+<p>然后如果 B 在超过了有效期之后，仍然<strong>没有</strong>调用 <code class="codehilite">Play.RejoinRoom()</code> 回到房间，那么 A 和 C 还会再次收到如下回调：</p>
+<div class="codehilite"><pre><span></span><span class="k">[PlayEvent]</span>
+<span class="na">public override void OnPlayerLeftRoom(Player player)</span>
+<span class="na">{</span>
+    <span class="na">Play.Log(&quot;OnPlayerLeftRoom&quot;,player.UserID);</span>
+<span class="na">}</span>
+</pre></div>
+
+</li>
+<li>
+<p>如果没有设置 <code class="codehilite">roomConfig.PlayerTimeToKeep</code> 那么 B 一旦掉线，A 和 C 会直接收到如下回调：</p>
+<div class="codehilite"><pre><span></span><span class="k">[PlayEvent]</span>
+<span class="na">public override void OnPlayerLeftRoom(Player player)</span>
+<span class="na">{</span>
+    <span class="na">Play.Log(&quot;OnPlayerLeftRoom&quot;,player.UserID);</span>
+<span class="na">}</span>
+</pre></div>
+
+<p>B 会收到如下回调：</p>
+<div class="codehilite"><pre><span></span><span class="k">[PlayEvent]</span>
+<span class="na">public override void OnDisconnected()</span>
+<span class="na">{</span>
+    <span class="na">Play.Log(&quot;OnDisconnected&quot;);</span>
+<span class="na">}</span>
+</pre></div>
+
+</li>
+</ol>
+<p>注意，<code class="codehilite">roomConfig.PlayerTimeToKeep</code> 的设置与否最大的区别在于：</p>
+<p><strong>如果设置了，A 和 C 端会在收到 B 的<code class="codehilite">OnPlayerLeftRoom</code> 的通知前，收到一个 B 的 <code class="codehilite">OnPlayerActivityChanged</code> 回调</strong></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../play-overview/" title="服务总览" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                服务总览
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../../solution/weapp/" title="在微信小程序与小游戏中使用 LeanCloud" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                在微信小程序与小游戏中使用 LeanCloud
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2014 - 2018 LeanCloud
+          </div>
+        
+        powered by
+        <a href="https://leancloud.cn">LeanCloud</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
